@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333; /* Default text color */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+  color: #ff6600; /* Orange color on hover */
+}
+
+main {
+  text-align: center;
+}
+
+.image-container {
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  background-color: #fff; /* White background for container */
+  border-radius: 50%; /* Rounded container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  overflow: hidden; /* Ensure image does not overflow container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+  display: block;
+  margin: auto; /* Center the image */
+}
+
+section {
+  width: 100%;
+  max-width: 600px; /* Limit section width */
+  margin-bottom: 40px;
+  background-color: #fff; /* White background for sections */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  animation: slideIn 1s ease; /* Slide-in animation for sections */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+section:hover {
+  background-color: #f9f9f9; /* Light gray background on hover */
+  transform: translateY(-5px); /* Move section up slightly on hover */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333; /* Dark gray text color */
+}
+
+section p {
+  font-size: 16px;
+  color: #666; /* Gray text color */
+}
